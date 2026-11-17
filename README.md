@@ -1,5 +1,13 @@
 # Anvaya Dental Studio • Boutique Design Portfolio Piece
 
+> [!WARNING]
+> **DISCLAIMER / SAMPLE DEMO PROJECT (IMPORTANT):**
+> Yeh repository ek agency portfolio / sample demonstration piece hai. 
+> **Isme diya gaya phone number (`+91 98765 43210`) aur contact details fictional (dummy) hain — yeh kisi actual doctor ya clinic ka original phone number nahi hai.** 
+> All names, clinical scenarios, and testimonials are crafted strictly for design demonstration purposes.
+
+---
+
 > An agency-grade, editorial web application for **Anvaya Dental Studio** in Civil Lines, Kanpur. Designed with an unhurried, warm luxury aesthetic that intentionally rejects generic AI-generated templates and medical blue clichés.
 
 ---

@@ -162,7 +162,10 @@ export function Footer() {
           <div>
             <p>© {new Date().getFullYear()} Anvaya Dental Studio. All rights reserved.</p>
             <p className="text-[11px] text-white/40 mt-0.5">
-              Reg. No. UPDC-11482 • European Class-B Sterilised Practice
+              Portfolio Demo Piece • UPDC-11482 • European Class-B Sterilised Practice
+            </p>
+            <p className="text-[11px] text-accent/80 mt-1">
+              *Disclaimer: Sample demonstration project. Contact numbers & doctor profiles are fictional placeholders.
             </p>
           </div>
 
