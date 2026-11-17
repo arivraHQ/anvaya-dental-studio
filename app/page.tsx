@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { TrustStrip } from "@/components/TrustStrip";
 import { Services } from "@/components/Services";
 import { Doctor } from "@/components/Doctor";
+import { FirstVisit } from "@/components/FirstVisit";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <TrustStrip />
       <Services />
       <Doctor />
+      <FirstVisit />
     </main>
   );
 }
