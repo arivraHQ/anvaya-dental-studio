@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { TrustStrip } from "@/components/TrustStrip";
 import { Services } from "@/components/Services";
+import { Doctor } from "@/components/Doctor";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <TrustStrip />
       <Services />
+      <Doctor />
     </main>
   );
 }
