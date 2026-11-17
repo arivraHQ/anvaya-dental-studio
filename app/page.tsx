@@ -6,6 +6,7 @@ import { Doctor } from "@/components/Doctor";
 import { FirstVisit } from "@/components/FirstVisit";
 import { Results } from "@/components/Results";
 import { Testimonials } from "@/components/Testimonials";
+import { FAQ } from "@/components/FAQ";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <FirstVisit />
       <Results />
       <Testimonials />
+      <FAQ />
     </main>
   );
 }
