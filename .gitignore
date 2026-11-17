@@ -31,7 +31,15 @@ yarn-error.log*
 lighthouse-report.json
 
 # Local env files
+.env
 .env*.local
+.env.*
+
+# AI Agent & Internal Governance (kept locally, ignored from GitHub)
+GEMINI.md
+AGENTS.md
+.agents/
+
 
 # Vercel
 .vercel
