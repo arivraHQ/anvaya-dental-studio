@@ -118,3 +118,10 @@ npm run build
 # Start production server
 npm start
 ```
+
+---
+
+## 📄 License & Attribution
+
+**ARIVRA Demo** — A product by [Arivra Design Labs](https://arivra.com/).  
+Licensed under the [MIT License](LICENSE).

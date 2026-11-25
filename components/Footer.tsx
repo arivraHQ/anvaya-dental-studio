@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { siteContent } from "@/content/site";
 import { ArrowUpRight, Phone, Clock, MapPin, Navigation, ShieldCheck } from "lucide-react";
 
@@ -81,7 +82,18 @@ export function Footer() {
               <span>{footer.addressHeading}</span>
             </div>
             <div className="space-y-2 text-[15px] text-[#F7F2EA]/85">
-              <p className="font-medium text-white">{brand.name}</p>
+              <div className="flex items-center gap-3 pb-1">
+                <div className="w-9 h-9 rounded-full overflow-hidden border border-accent/40 shrink-0 bg-[#1F4D3F]">
+                  <Image
+                    src="/images/anvaya-emblem.png"
+                    alt="Anvaya Dental Studio emblem"
+                    width={36}
+                    height={36}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="font-medium text-white">{brand.name}</p>
+              </div>
               <p className="text-[#F7F2EA]/75 leading-relaxed">
                 {brand.addressLine1}
                 <br />
@@ -164,14 +176,35 @@ export function Footer() {
             <p className="text-[11px] text-white/40 mt-0.5">
               Portfolio Demo Piece • UPDC-11482 • European Class-B Sterilised Practice
             </p>
-            <p className="text-[11px] text-accent/80 mt-1">
-              *Disclaimer: Sample demonstration project. Contact numbers & doctor profiles are fictional placeholders.
-            </p>
           </div>
 
           <div className="flex items-center gap-6">
             <span className="text-[12px] text-white/50">
-              Designed as a boutique studio portfolio piece
+              Civil Lines • Kanpur
+            </span>
+          </div>
+        </div>
+
+        {/* Portfolio & Showcase Disclaimer + Arivra Design Labs Attribution */}
+        <div className="mt-8 pt-6 border-t border-white/10 text-center space-y-3">
+          <p className="text-[11px] text-[#F7F2EA]/65 max-w-4xl mx-auto leading-relaxed">
+            <strong className="text-accent">Notice &amp; Disclaimer:</strong> This website is an interactive concept application engineered solely for portfolio demonstration and showcase purposes. Anvaya Dental Studio is a fictional entity. All contact details, telephone numbers, clinical registration IDs, and doctor profiles are simulated dummy data. Please do not contact these numbers for real dental appointments or medical care.
+          </p>
+          <div className="inline-flex flex-wrap items-center justify-center gap-2 px-4 py-1.5 rounded-pill bg-white/5 border border-accent/35 text-xs text-[#F7F2EA]">
+            <span className="font-semibold tracking-wider uppercase text-[10px] text-accent">
+              ARIVRA Demo
+            </span>
+            <span className="text-white/30">•</span>
+            <span className="text-[#F7F2EA]/80">
+              A product by{" "}
+              <a
+                href="https://arivra.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-white hover:text-accent underline underline-offset-4 transition-colors"
+              >
+                Arivra Design Labs
+              </a>
             </span>
           </div>
         </div>

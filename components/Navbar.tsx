@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { siteContent } from "@/content/site";
 import { ArrowUpRight, Menu, X, Phone } from "lucide-react";
 
@@ -31,14 +32,26 @@ export function Navbar() {
           {/* Wordmark Left */}
           <Link
             href="/"
-            className="group flex flex-col items-start focus:outline-none focus-visible:ring-1 focus-visible:ring-primary"
+            className="group flex items-center gap-3 focus:outline-none focus-visible:ring-1 focus-visible:ring-primary"
           >
-            <span className="font-serif text-2xl md:text-3xl text-text tracking-tight font-medium">
-              Anvaya
-            </span>
-            <span className="text-[11px] uppercase tracking-[0.2em] text-muted -mt-0.5 group-hover:text-primary transition-colors">
-              Dental Studio • Kanpur
-            </span>
+            <div className="w-10 h-10 rounded-full overflow-hidden border border-primary/25 shrink-0 bg-[#1F4D3F]">
+              <Image
+                src="/images/anvaya-emblem.png"
+                alt="Anvaya Dental Studio emblem"
+                width={40}
+                height={40}
+                priority
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col items-start">
+              <span className="font-serif text-2xl md:text-3xl text-text tracking-tight font-medium">
+                Anvaya
+              </span>
+              <span className="text-[11px] uppercase tracking-[0.2em] text-muted -mt-0.5 group-hover:text-primary transition-colors">
+                Dental Studio • Kanpur
+              </span>
+            </div>
           </Link>
 
           {/* 4 Navigation Links */}

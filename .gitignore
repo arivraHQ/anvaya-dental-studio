@@ -37,8 +37,16 @@ lighthouse-report.json
 
 # AI Agent & Internal Governance (kept locally, ignored from GitHub)
 GEMINI.md
+*gemini*.md
 AGENTS.md
 .agents/
+.gemini/
+*.agent*
+.ag-kit-backups/
+graphify-out/
+.codex/
+__pycache__/
+*.pyc
 
 
 # Vercel
